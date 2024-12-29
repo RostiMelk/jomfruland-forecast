@@ -13,11 +13,14 @@ export default function Home() {
   }
 
   const dailyForecasts = getDailyForecasts(weather?.properties.timeseries);
+  const updated = weather?.properties.meta.updated_at;
 
   return (
-    <main className="container min-h-screen">
-      <header className="text-3xl font-semibold text-center text-gray-800 my-8">
-        <h1>7-dagers værvarsel for Sørhagen</h1>
+    <main className="px-4 min-h-screen">
+      <header className="my-8 text-center">
+        <h1 className="text-2xl font-semibold text-gray-800">
+          7-dagers værvarsel for Sørhagen fra Meteorologisk institutt
+        </h1>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
@@ -35,9 +38,7 @@ export default function Home() {
       )}
 
       <footer className="my-8 text-sm text-gray-500 text-center">
-        Sist oppdatert:{" "}
-        {weather &&
-          new Date(weather.properties.meta.updated_at).toLocaleString("nb-NO")}
+        Sist oppdatert: {updated && new Date(updated).toLocaleString("nb-NO")}
       </footer>
     </main>
   );

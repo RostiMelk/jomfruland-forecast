@@ -12,10 +12,6 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      container: {
-        center: true,
-        padding: "1rem",
-      },
     },
   },
   plugins: [],

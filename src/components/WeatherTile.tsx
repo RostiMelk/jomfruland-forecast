@@ -80,7 +80,7 @@ export const WeatherTile: React.FC<WeatherTileProps> = ({ data, time }) => {
             <Navigation2
               className="size-4"
               style={{
-                transform: `rotate(${instant.details.wind_from_direction}deg)`,
+                transform: `rotate(${instant.details.wind_from_direction + 180}deg)`,
               }}
               aria-hidden="true"
             />
