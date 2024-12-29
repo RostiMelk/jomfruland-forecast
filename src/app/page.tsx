@@ -16,7 +16,7 @@ export default function Home() {
   const updated = weather?.properties.meta.updated_at;
 
   return (
-    <main className="px-4 min-h-screen">
+    <main className="px-4">
       <header className="my-8 text-center">
         <h1 className="text-2xl font-semibold text-gray-800">
           7-dagers værvarsel for Sørhagen fra Meteorologisk institutt
