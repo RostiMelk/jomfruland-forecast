@@ -13,8 +13,8 @@ Jomfruland is a small island off the coast of Norway where checking the weather 
 ## Development
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 That's all! 🌤️
